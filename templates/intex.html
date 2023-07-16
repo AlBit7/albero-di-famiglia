@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Albero</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body onload="caricaDB();">
+
+    <!-- Albero genialogico vero e proprio -->
+    <div class="albero" id="albero"></div>
+
+    <div class="contenitoreBottoni">
+        <!-- Bottone di salvataggio dell'intero DB -->
+        <button id="saveButton" class="round-button">
+            <i class="fas fa-save"></i>
+        </button>
+        <!-- Bottone di aggiunta di una persona -->
+        <button id="addButton" class="round-button">
+            <i class="fas fa-plus"></i>
+        </button>
+        <!-- Bottone di aggiunta di una relazione -->
+        <button id="uniteButton" class="round-button">
+            <i class="fas fa-heart"></i>
+        </button>
+        <!-- Bottone di aggiunta di un collegamento -->
+        <button id="connectButton" class="round-button">
+            <i class="fas fa-link"></i>
+        </button>
+    </div>
+
+    <!-- Albero genialogico vero e proprio -->
+    <div class="finestraModifica" id="finestraModifica">
+        <div class="finestraModificaPersone" id="datiPersona">
+            
+            <!-- JS si occuperà di aggiungere le informazioni quì -->
+            
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename= 'js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename= 'js/aggiungi.js') }}"></script>
+
+</body> 
