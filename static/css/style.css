@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(circle, #e0e0e0 15%, transparent 10%) 0 0,
+              radial-gradient(circle, #e0e0e0 15%, transparent 10%) 15px 15px;
+    background-color: #ffffff;
+    background-size: 30px 30px;
+    font-family: 'Quicksand', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.albero {
+    width: 600%;
+    height: 600vh;
+}
+
+/* NODI */
+
+.nodo {
+    position: absolute;
+    z-index: 100;
+}
+
+.multiplo {
+    display: flex;
+    border: 1.5px solid red;
+    border-radius: 10.5px; 
+    margin: 5px;
+    background-color: white;
+}
+
+.singolo {
+    
+}
+
+/* PERSONE */
+
+/* rettangolo sbordato persona maschio/femina con blu e rosa */
+.persona {
+    text-align: center;
+    height: auto;
+    width: auto;
+
+    background-color: white;
+    border: 2px solid #787878;
+    border-radius: 8px; 
+    
+    padding: 5px;
+    margin: 5px;
+
+    user-select: none;
+    z-index: 101;    
+}
+
+.maschio {
+    border-color: blue;
+}
+.femmina {
+    border-color: pink;
+}
+
+/* per spostare le div in giro per il sito */
+.spostabile {
+    position: absolute;
+}
+
+.contenitoreBottoni {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+/* altre cose ... */
+#saveButton, #addButton, #uniteButton, #connectButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#saveButton:hover, #addButton:hover, #uniteButton:hover, #connectButton:hover {
+    background-color: #3367d6;
+    cursor: pointer;
+}
+
+.round-button i {
+    font-size: 18px;
+}
+
+.finestraModifica {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+.finestraModificaPersone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    z-index: 9999;
+}
+
+.selezionabile {
+    width: 50%;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.selezionato {
+    color: red;
+    text-decoration: underline;
+}
+
+.pulsante-ok {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.centra {
+    width: 100%;
+    text-align: center;
+}
